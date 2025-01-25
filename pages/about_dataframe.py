@@ -1,4 +1,4 @@
-65import pandas as pd
+import pandas as pd
 import streamlit as st
 
 data = pd.read_excel('./pages/source.xlsx')
