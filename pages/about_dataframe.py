@@ -3,7 +3,7 @@ import streamlit as st
 
 data = pd.read_excel('./pages/source.xlsx')
 unique_category = data['category'].unique()
-unique_store = data['store_name'].unique()
+unique_storename = data['store_name'].unique()
 
 selected_category = st.multiselect("select category",options=unique_category)
 selected_store = st.multiselect("select store",options=unique_storename)
