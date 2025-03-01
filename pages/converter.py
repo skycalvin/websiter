@@ -6,7 +6,7 @@ conversion_factors = {
             'm':0.01},
 'calories': {'fries':319,
             'donut':190,
-            'burger':290
+            'burger':290,
             'ice cream':207,
             'apple':52.1,
             'banana':88.7,
