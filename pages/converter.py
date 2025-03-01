@@ -4,7 +4,7 @@ conversion_factors = {
 'distance':{'mm':1,
             'cm':0.1,
             'm':0.01},
-'calories': {'fries:319'
+'calories': {'fries':319,
             'donut':190,
             'burger':290
             'ice cream':207,
