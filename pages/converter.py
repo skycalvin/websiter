@@ -1,5 +1,7 @@
 import streamlit as st
 
+st.title('Fun Conversion App')
+
 conversion_factors = {
 'distance':{'mm':1,
             'cm':0.1,
