@@ -25,9 +25,9 @@ conversion_factors = {
                         "mouse":1/0.450,
                         "dog":1/1.4,
                         "cow":1/1800,
-                        "elephant":1/4000,633
+                        "elephant":1/4000,
                         "giraffe":1/1200,
-                        "penguin":23,
+                        "penguin":1/23,
                         "dolphin":1/4000,
                         "blue whale":1/150000,
                         "brontosaurus":1/22000,
