@@ -16,7 +16,7 @@ conversion_factors = {
             'coke':319/139,
             'milk':319/42.3},
             'instant noodles':319/340},
-  'weight':{'gr':0.001,
+  'weight':{'gr':1/0.001,
             'kg':1,
             'ton':1/1000,
             'adult person':1/75,
@@ -31,7 +31,7 @@ conversion_factors = {
             'dolphin':1/4000,
             'blue whale':1/150000,
             'brontosaurus':1/22000,
-            't-rex':1/8000,
+            't-rex':1/8000}
   'time':{'seconds':3600,
           'minutes':60,
           'hour':1,
