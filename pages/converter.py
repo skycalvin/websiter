@@ -16,7 +16,7 @@ conversion_factors = {
             'coke':319/139,
             'milk':319/42.3},
             'instant noodles':319/340},
-  'weight':{'gr':1/0.001,
+  'weight':{'gr':0.001,
             'kg':1,
             'ton':1/1000,
             'adult person':1/75,
