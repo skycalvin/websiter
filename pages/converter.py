@@ -32,7 +32,7 @@ conversion_factors = {
                         #"blue whale":1/150000,
                         #"brontosaurus":1/22000,
                         #"t-rex":1/8000},
-            'toys': {"NERF":800000/800000,
+            toys: {"NERF":800000/800000,
                         "lego":320000/800000,
                         "hotwheels":27500/800000,
                         "monster jam":155000/800000,
