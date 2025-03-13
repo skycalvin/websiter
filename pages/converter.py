@@ -80,7 +80,7 @@ picture_link = {"NERF":'./images/nerf_gun.jpg',
                 "gundam MG 2.0":'./images/gundam_mg2.0.jpg',
                 "kong":'./images/kong.jpg'},
 
-col1,col2.col3,col4,col5 = st.columns(5)
+col1,col2,col3,col4,col5 = st.columns(5)
 
 #category selection
 with col1:
