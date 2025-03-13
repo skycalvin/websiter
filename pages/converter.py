@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout='wide')
 
 st.title('Fun Conversion App')
 
@@ -78,7 +79,7 @@ picture_link = {"NERF":'./images/nerf_gun.jpg',
                 "gundam MGSD":'./images/gundam_MGSD.jpg',
                 "gundam MG":'./images/gundam_MG.jpg',
                 "gundam MG 2.0":'./images/gundam_mg2.0.jpg',
-                "kong":'./images/kong.jpg'},
+                "kong":'./images/kong.jpg'}
 
 col1,col2,col3,col4,col5 = st.columns(5)
 
