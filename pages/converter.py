@@ -1,7 +1,7 @@
 import streamlit as st
 st.set_page_config(layout='wide')
 
-st.title('Fun Conversion App')
+st.title('Toy Conversion App')
 
 conversion_factors = {
     'distance': {'mm':1,
@@ -86,7 +86,7 @@ col1,col2,col3,col4,col5 = st.columns(5)
 #category selection
 with col1:
     category_list = list(conversion_factors.keys())
-    category = st.radio("Select category",options=category_list)
+    category = st.radio("Select category",options=category_list,index=3)
 
 with col2:
    input_value = st.number_input("Input",min_value=1,value=1)
