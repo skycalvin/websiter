@@ -95,12 +95,17 @@ with col2:
 with col3:
   base_unit_list = list(conversion_factors[category].keys())
   base_unit = st.radio("From:",options=base_unit_list)
+  base_cf = conversion_factors[category][base_unit]
   st.image(picture_link[base_unit])
 
 with col4:
   target_unit_list = list(conversion_factors[category].keys())
   target_unit = st.radio("To:",options=target_unit_list)
+  target_cf = conversion_factors[category][target_unit]
+  st.image(picture_link[target_unit])
 
 with col5:
   st.write("output")
+  output_value = input_value / base_cf * target_cf
+  st.write(f'The {category} of {input_value} {base_unit} equals to {output_value:.2f} {target_unit}')
 
