@@ -33,24 +33,24 @@ conversion_factors = {
                 "brontosaurus":1/22000,
                 "t-rex":1/8000},
     'toys' : {"NERF":800000/800000,
-                "lego":320000/800000,
-                "hotwheels":27500/800000,
-                "monster jam":155000/800000,
-                "transformers":490000/800000,
-                "godzilla":219000/800000,
-                "ghidorah":482000/800000,
-                "lamborghini":59000/800000,
-                "jaeger":260000/800000,
-                "Mario":299000/800000,
-                "gundam HG":600000/800000,
-                "gundam MGEX":2000000/800000,
-                "gundam PG":4000000/800000,
-                "gundam RG":650000/800000,
-                "gundam SD":185000/800000,
-                "gundam MGSD":220000/800000,
-                "gundam MG":930000/800000,
-                "gundam MG 2.0":1000000/800000,
-                "kong":512000/800000},
+                "lego":800000/320000,
+                "hotwheels":800000/27500,
+                "monster jam":800000/155000,
+                "transformers":800000/490000,
+                "godzilla":800000/219000,
+                "ghidorah":800000/482000,
+                "lamborghini":800000/59000,
+                "jaeger":800000/260000,
+                "Mario":800000/299000,
+                "gundam HG":800000/600000,
+                "gundam MGEX":/800000/2000000,
+                "gundam PG":800000/4000000,
+                "gundam RG":800000/650000,
+                "gundam SD":800000/185000,
+                "gundam MGSD":800000/220000,
+                "gundam MG":800000/930000,
+                "gundam MG 2.0":800000/1000000,
+                "kong":800000/512000},
     'time': {'seconds':3600,
                 'minutes':60,
                 'hour':1,
@@ -60,21 +60,41 @@ conversion_factors = {
                 'year':1/(24*365),
                 'cat year':1/(24*365*5),
                 'dog year':1/(24*365*5)}}
+picture_link = {"NERF":'./images/nerf_gun.jpg',
+                "lego":'./images/lego.jpg',
+                "hotwheels":'./images/hotwheels.jpg',
+                "monster jam":'./images/monster_jam.jpg',
+                "transformers":'./images/transformers.jpg',
+                "godzilla":'./images/godzilla.jpg',
+                "ghidorah":'./images/ghidorah.jpg',
+                "lamborghini":'./images/lamborghini.jpg',
+                "jaeger":'./images/jaeger.jpg',
+                "Mario":'./images/mario.jpg',
+                "gundam HG":'./images/gundam_HG.jpeg',
+                "gundam MGEX":'./images/gundam_MGEX.jpg',
+                "gundam PG":'./images/gundam_PG.jpg',
+                "gundam RG":'./images/gundam_RG.jpg',
+                "gundam SD":'./images/gundam_SD.jpg',
+                "gundam MGSD":'./images/gundam_MGSD.jpg',
+                "gundam MG":'./images/gundam_MG.jpg',
+                "gundam MG 2.0":'./images/gundam_mg2.0.jpg',
+                "kong":'./images/kong.jpg'},
 
 col1,col2.col3,col4,col5 = st.columns(5)
 
 #category selection
 with col1:
-category_list = list(conversion_factors.keys())
-category = st.radio("Select category",options=category_list)
+    category_list = list(conversion_factors.keys())
+    category = st.radio("Select category",options=category_list)
 
 with col2:
-  st.write("Input")
+   input_value = st.number_input("Input",min_value=1,value=1)
 
 
 with col3:
   base_unit_list = list(conversion_factors[category].keys())
   base_unit = st.radio("From:",options=base_unit_list)
+  st.image(picture_link[base_unit])
 
 with col4:
   target_unit_list = list(conversion_factors[category].keys())
