@@ -43,7 +43,7 @@ conversion_factors = {
                 "jaeger":800000/260000,
                 "Mario":800000/299000,
                 "gundam HG":800000/600000,
-                "gundam MGEX":/800000/2000000,
+                "gundam MGEX":800000/2000000,
                 "gundam PG":800000/4000000,
                 "gundam RG":800000/650000,
                 "gundam SD":800000/185000,
