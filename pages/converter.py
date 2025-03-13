@@ -47,7 +47,7 @@ conversion_factors = {
                 "gundam PG":4000000/800000,
                 "gundam RG":650000/800000,
                 "gundam SD":185000/800000,
-                "gundam MGSD"220000/800000,
+                "gundam MGSD":220000/800000,
                 "gundam MG":930000/800000,
                 "gundam MG 2.0":1000000/800000,
                 "kong":512000/800000},
